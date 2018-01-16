@@ -1,4 +1,4 @@
-package com.example.cgi.digit;
+package com.example.cgi.digit.activities;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -29,6 +29,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.cgi.digit.R;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;

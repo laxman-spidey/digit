@@ -1,4 +1,4 @@
-package com.example.cgi.digit;
+package com.example.cgi.digit.activities;
 
 import android.content.Context;
 import android.view.Gravity;

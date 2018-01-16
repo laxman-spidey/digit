@@ -32,4 +32,10 @@
         <item name="android:background">@android:color/transparent</item>
     </style>
 
+    <style name="MyToolbarTitleApperance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
 </resources>

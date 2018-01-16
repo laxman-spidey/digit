@@ -1,10 +1,12 @@
-package com.example.cgi.digit
+package com.example.cgi.digit.activities
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.Toast
+import com.example.cgi.digit.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import kotlinx.android.synthetic.main.content_signin.*
@@ -45,6 +47,7 @@ class SigninActivity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         ProgressDialog.hide(getContext())
                         val user = mAuth!!.currentUser
+                        startActivity(Intent(this,HomeActivity::class.java))
                         Toast.makeText(getContext(), "login success", Toast.LENGTH_SHORT).show()
                     } else {
                         Log.i(TAG, task.exception.toString())
@@ -81,7 +84,7 @@ class SigninActivity : AppCompatActivity() {
     }
 
     fun openNextActivity() {
-
+        startActivity(Intent(this,HomeActivity::class.java))
     }
 
     fun getContext(): Context {
