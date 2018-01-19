@@ -12,7 +12,7 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import kotlinx.android.synthetic.main.content_signin.*
 
 
-class SigninActivity : AppCompatActivity() {
+class SigninActivity : BaseActivity() {
 
     private val TAG: String = "SigninActivity"
 
