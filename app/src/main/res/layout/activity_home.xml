@@ -7,6 +7,21 @@
 
 
     <Button
+        android:id="@+id/btnCreateDoorNumber"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4sp"
+        android:text="@string/create_door_number"
+        android:onClick="createDoorNumber"
+        android:textColor="@color/white" />
+
+
+
+    <Button
         android:id="@+id/btnSearch"
         style="?android:textAppearanceSmall"
         android:layout_width="match_parent"

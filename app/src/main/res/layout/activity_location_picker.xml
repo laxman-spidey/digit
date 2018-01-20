@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/pick_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_comments"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_border_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:onClick="locationPickUp">
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:enabled="false"
+            android:focusable="false"
+            android:hint="Pick Location"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:padding="15dp"
+            android:paddingBottom="30dp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/gray_color"
+            android:textCursorDrawable="@drawable/color_cursor"
+             />
+
+        <ImageView
+            android:id="@+id/picker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="50dp"
+            app:srcCompat="@drawable/ic_my_location" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:entries="@array/property_types"/>
+
+
+
+
+</LinearLayout>
