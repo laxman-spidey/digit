@@ -141,7 +141,7 @@ public class BaseActivity extends AppCompatActivity {
 
 
     public void setUpToolbarWithTitle(String title) {
-        //mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
         mToolbar.setTitle(title);
         mToolbar.setTitleTextAppearance(this, R.style.MyToolbarTitleApperance);
         setSupportActionBar(mToolbar);

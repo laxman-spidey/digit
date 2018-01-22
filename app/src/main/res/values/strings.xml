@@ -18,6 +18,8 @@
     <string name="search">Search</string>
     <string name="create_door_number">Create Door Number</string>
     <string name="search_utility">Search utility</string>
+    <string name="floors">Select number of floors</string>
+    <string name="add_details">Add Details</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -30,6 +32,17 @@
         <item>Government Office</item>
         <item>Vacant Land</item>
     </string-array>
+
+    <string-array name="residential_apartment">
+        <item>Select Property</item>
+        <item>Residential-Apartment</item>
+        <item>Residential-Individual</item>
+        <item>Commercial-Others</item>
+        <item>Government Office</item>
+        <item>Vacant Land</item>
+    </string-array>
+
+
 
 
 </resources>

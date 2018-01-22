@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.cgi.digit.R;
+import com.example.cgi.digit.create.door.number.HouseDetailsModel;
 import com.example.cgi.digit.create.door.number.LocationPickActivity;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
@@ -17,6 +18,7 @@ import com.google.android.gms.location.places.ui.PlacePicker;
  */
 
 public class HomeActivity extends BaseActivity{
+
 
 
     @Override

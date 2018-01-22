@@ -44,12 +44,38 @@
     </LinearLayout>
 
     <Spinner
+        android:id="@+id/spnProp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:entries="@array/property_types"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <EditText
+            android:id="@+id/etFloors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/floors"/>
+    </android.support.design.widget.TextInputLayout>
 
 
+    <Spinner
+        android:id="@+id/spnPropSubCat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
 
+    <Button
+        android:id="@+id/btnAddDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_details"
+        android:layout_margin="10dp"
+        android:background="@drawable/bottom_button"
+        android:textColor="@color/white"
+        />
 
 </LinearLayout>
