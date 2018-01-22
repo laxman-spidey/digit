@@ -9,5 +9,8 @@ public class Constant {
     {
         public final static String TAG_LAT = "lat";
         public final static String TAG_LONG = "long";
+
+        public final static String NO_OF_FLOORS="NO_OF_FLOORS";
+
     }
 }

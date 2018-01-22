@@ -10,6 +10,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.cgi.digit.R;
 import com.example.cgi.digit.activities.BaseActivity;
@@ -55,7 +56,7 @@ public class FlatsListActivityJava extends BaseActivity implements View.OnClickL
 
     @Override
     public void onClick(View view) {
-
+        Toast.makeText(getApplicationContext(),"Navigation to create screen",Toast.LENGTH_SHORT).show();
     }
 
     @Override

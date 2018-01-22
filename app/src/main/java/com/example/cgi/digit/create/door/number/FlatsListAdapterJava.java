@@ -39,7 +39,7 @@ public class FlatsListAdapterJava extends RecyclerView.Adapter<FlatsListAdapterJ
     public void onBindViewHolder(ViewHolder holder, int position) {
 
         HouseDetailsModel singleData=list.get(position);
-        holder.tvDoorNumber.setText(singleData.getHouseNumber());
+        holder.tvDoorNumber.setText("House Number "+singleData.getHouseNumber());
 
     }
 

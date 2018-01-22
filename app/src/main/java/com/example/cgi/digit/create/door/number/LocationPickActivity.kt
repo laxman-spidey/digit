@@ -8,6 +8,7 @@ import android.widget.AdapterView
 import android.widget.EditText
 import android.widget.Spinner
 import android.widget.Toast
+import com.example.cgi.digit.Constant.Location.NO_OF_FLOORS
 
 import com.example.cgi.digit.R
 import com.example.cgi.digit.activities.BaseActivity
@@ -65,7 +66,12 @@ class LocationPickActivity : BaseActivity(), AdapterView.OnItemSelectedListener,
     }
     override fun onClick(p0: View?) {
        // TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-        startActivity(Intent(this, FlatsListActivityJava::class.java))
+        //var numberOfFloors=etFloors.text.toString();
+        if(!etFloors.text.toString().equals("0"))
+        startActivity(Intent(this, FlatsListActivityJava::class.java)
+                .putExtra(NO_OF_FLOORS,etFloors.text.toString()))
+        else
+            Toast.makeText(this,"Navigation to create screen",Toast.LENGTH_SHORT).show();
 
 
 
