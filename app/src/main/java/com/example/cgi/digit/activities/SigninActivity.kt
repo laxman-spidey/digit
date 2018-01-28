@@ -87,9 +87,5 @@ class SigninActivity : BaseActivity() {
         startActivity(Intent(this,HomeActivity::class.java))
     }
 
-    fun getContext(): Context {
-        return this
-    }
-
 
 }
