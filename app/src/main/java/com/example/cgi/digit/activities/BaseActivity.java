@@ -155,5 +155,9 @@ public class BaseActivity extends AppCompatActivity {
         });
     }
 
+    public Context getContext()
+    {
+        return this;
+    }
 
 }
