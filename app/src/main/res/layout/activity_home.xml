@@ -45,6 +45,7 @@
         android:background="@color/colorPrimaryDark"
         android:elevation="4sp"
         android:text="@string/search_utility"
+        android:onClick="searchUtility"
         android:textColor="@color/white" />
 
 </LinearLayout>

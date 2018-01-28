@@ -8,6 +8,7 @@ import android.widget.Toast;
 import com.example.cgi.digit.R;
 import com.example.cgi.digit.create.door.number.HouseDetailsModel;
 import com.example.cgi.digit.create.door.number.LocationPickActivity;
+import com.example.cgi.digit.search.utilities.GooglePlacesActivity;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.Place;
@@ -34,6 +35,11 @@ public class HomeActivity extends BaseActivity{
 
     public void createDoorNumber(View view){
         Intent intent=new Intent(getApplicationContext(), LocationPickActivity.class);
+        startActivity(intent);
+
+    }
+    public void searchUtility(View view){
+        Intent intent=new Intent(getApplicationContext(), GooglePlacesActivity.class);
         startActivity(intent);
 
     }
