@@ -56,7 +56,8 @@ public class FlatsListActivityJava extends BaseActivity implements View.OnClickL
 
     @Override
     public void onClick(View view) {
-        Toast.makeText(getApplicationContext(),"Navigation to create screen",Toast.LENGTH_SHORT).show();
+        Intent intent=new Intent(getApplicationContext(),CreateFlatsActivity.class);
+        startActivity(intent);
     }
 
     @Override
